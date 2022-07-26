@@ -1,0 +1,30 @@
+:root {
+  --main-color: darkseagreen;
+  --accent-color: ;
+  --main-background-color: rgb(235, 235, 235);
+  --accent-background-color: white;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  grid-template-rows: 1.25fr 5fr;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: var(--main-color);
+}
+
+.header {
+
+}
+
+.content {
+  background-color: var(--main-background-color);
+}
