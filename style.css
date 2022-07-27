@@ -27,29 +27,38 @@ body {
 }
 
 .large-icon {
-  max-height: 45px;
+  max-height: 70px;
 }
 
 h1 {
   color: var(--main-text-color-light);
-  font-size: 24px;
-  margin: 0px;
+  font-size: 28px;
+  margin: 5px 0px;
 }
 
 h2 {
   color: var(--main-text-color-light);
-  font-size: 18px;
-  margin: 0px;
+  font-size: 20px;
+  margin: 5px 0px;
 }
 
 h3 {
   color: var(--main-text-color-dark);
+  font-size: 24px;
+  margin: 5px 0px;
 }
 
 h4 {
   color: var(--main-text-color-dark);
+  font-size: 20px;
   padding-right: 15px;
-  margin: 0px;
+  margin: 5px 0px;
+}
+
+h5 {
+  color: var(--main-text-color-dark);
+  font-size: 16px;
+  margin: 5px 0px;
 }
 
 .sidebar {
@@ -92,6 +101,9 @@ a {
 
 .header {
   padding: 15px 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .header-container {
@@ -101,7 +113,7 @@ a {
 
 .header-sub-container {
   display: grid;
-  grid-template-columns: min-content min-content max-content;
+  grid-template-columns: max-content max-content max-content;
   gap: 15px;
   align-items: center;
   max-height: min-content;
