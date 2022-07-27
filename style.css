@@ -6,6 +6,7 @@
   --main-text-color-light: white;
   --main-text-color-dark: black;
   --accent-text-color: rgb(0,200,199);
+  --main-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 7fr;
   grid-template-rows: 1.25fr 5fr;
+  font-family: var(--main-font);
 }
 
 .small-icon {
@@ -70,7 +72,7 @@ h5 {
 
 .title {
   display: grid;
-  grid-template-columns: 30px 125px;
+  grid-template-columns: 30px 150px;
   margin-bottom: 35px;
   gap: 10px;
   justify-items: start;
@@ -84,7 +86,7 @@ h5 {
 
 .nav-links {
   display: grid;
-  grid-template-columns: 20px 115px;
+  grid-template-columns: 20px 135px;
   margin: 35px 10px;
   gap: 10px;
   justify-items: start;
@@ -127,6 +129,28 @@ input {
   border-radius: 15px;
   width: 35vw;
 }
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input {
+  color: transparent;
+  background-color: transparent;
+  max-width: min-content;
+}
+
+.custom-file-input::before {
+  content: "Upload";
+  -webkit-user-select: none;
+  color: var(--main-text-color-light);
+  background: var(--main-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  display: inline-block;
+} 
 
 .content {
   background-color: var(--main-background-color);
