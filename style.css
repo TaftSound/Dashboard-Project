@@ -86,12 +86,16 @@ h5 {
 
 .nav-links {
   display: grid;
-  grid-template-columns: 20px 135px;
-  margin: 35px 10px;
+  grid-template-columns: 30px 150px;
+  margin: 45px 0px;
   gap: 10px;
   justify-items: start;
   align-items: center;
   justify-content: center;
+}
+
+.icon-center {
+  justify-self: center;
 }
 
 a {
@@ -105,6 +109,7 @@ a {
   padding: 15px 3vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 15px;
 }
 
@@ -143,7 +148,7 @@ input {
 
 .custom-file-input::before {
   content: "Upload";
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   color: var(--main-text-color-light);
   background: var(--main-color);
   padding: 7px 20px;
@@ -172,4 +177,11 @@ button {
 
 .content {
   background-color: var(--main-background-color);
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  padding: 15px;
+  padding-right: clamp(15px, calc(13vw - 125px), 75px);
 }
