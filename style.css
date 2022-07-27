@@ -132,12 +132,13 @@ input {
 
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
+  width: 90px;
 }
 
 .custom-file-input {
   color: transparent;
   background-color: transparent;
-  max-width: min-content;
+  width: 90px;
 }
 
 .custom-file-input::before {
@@ -145,12 +146,29 @@ input {
   -webkit-user-select: none;
   color: var(--main-text-color-light);
   background: var(--main-color);
-  padding: 8px 15px;
+  padding: 7px 20px;
   border-radius: 20px;
   font-family: var(--main-font);
   font-size: 16px;
   display: inline-block;
 } 
+.custom-file-input:hover::before {
+  cursor: pointer;
+}
+
+form {
+  width: fit-content;
+}
+
+button {
+  color: var(--main-text-color-light);
+  background: var(--main-color);
+  padding: 7.2px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  width: 90px;
+}
 
 .content {
   background-color: var(--main-background-color);
