@@ -15,8 +15,8 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 2fr 7fr;
-  grid-template-rows: 1.25fr 5fr;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 1.15fr 5fr;
   font-family: var(--main-font);
 }
 
@@ -54,7 +54,7 @@ h4 {
   color: var(--main-text-color-dark);
   font-size: 20px;
   padding-right: 15px;
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 
 h5 {
@@ -177,11 +177,51 @@ button {
 
 .content {
   background-color: var(--main-background-color);
-  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 15px;
-  padding: 15px;
-  padding-right: clamp(15px, calc(13vw - 125px), 75px);
+  column-gap: 20px;
+  padding: 30px 20px;
+  padding-right: clamp(20px, calc(12vw - 125px), 75px);
+  align-content: start;
+}
+
+.main-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.main-content-card {
+  background-color: var(--accent-background-color);
+  border-radius: 8px;
+  box-shadow: inset 57.5px 0px 0px -50px var(--accent-color),
+  1px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: clamp(140px, calc(20vh - 25px), 280px);
+}
+
+.main-content-card h4 {
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+p {
+  margin: 5px 0px;
+  font-size: 16px;
+}
+
+.card-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-right: 10px;
+}
+
+.secondary-content-grid {
+  display: grid;
 }
